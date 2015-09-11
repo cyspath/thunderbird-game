@@ -102,11 +102,11 @@
           game.addAsteroid();
           n += 1;
           // n max ~ 16
-          if (n >= 16) {
+          if (n >= 10) {
             game.allEnemiesGenerated = true;
             clearInterval(interval);
           }
-        }.bind(game), 400)
+        }.bind(game), 200)
 
         new Thunderbird.GameView(game, ctx).start(canvas);
       })
